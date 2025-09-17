@@ -1,0 +1,54 @@
+.container__stories {
+  width: 1125px;
+  height: 684px;
+  display: flex;
+  flex-direction: column;
+  margin: 90px 240px;
+}
+
+.stories__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-direction: row;
+}
+
+.link {
+  color: #FB8F1D;
+  text-decoration: none;
+  font-weight: 600;
+  size: 17px;
+  line-height: 60px;
+}
+
+.stories__body {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.story {
+  width: 266px;
+  height: 446px;
+  display: flex;
+  flex-direction: column;
+}
+
+.story img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.subheading {
+  font-size: 19px;
+  font-weight: 700px;
+  line-height: 30px;
+  color: #000;
+}
+
+story__text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+}

@@ -1,0 +1,27 @@
+body {
+  font-family: "Inter", sans-serif;
+  color: #7D7987;
+}
+
+li {
+  list-style: none;
+}
+
+.paragraph {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: Mulish;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+  color: #000000;
+  font-family: Playfair Display;
+}
+
+a {
+  text-decoration: none;
+}

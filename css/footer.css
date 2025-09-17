@@ -1,0 +1,37 @@
+.footer__container {
+  background-color: #F8F8F8; 
+  height: 195px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: 31px 191px 40px;
+  width: 1118px;
+  height: 134px;
+}
+
+.footer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__hr {
+  background: #C4C4C4;
+  height: 0.6px;
+  width: 1118px;
+  border: 0;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center; 
+  gap: 35px; 
+  margin-top: 20px;
+}
+
+.footer__social img {
+  width: 22px;
+  height: 22px;
+}
