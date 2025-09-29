@@ -1,16 +1,8 @@
-.container {
-  max-width: 1600px;
-  margin: 0 auto;
-  width: 1206px;
-  height: 740px;
-  margin: 27px 197px 116px 197px;
-}
-
 .hero {
-  min-height: 700px;
+  padding-top: 27px;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  height: 100%;
 }
 
 .hero__button {
@@ -30,57 +22,39 @@
 
 .container__hero {
   display: flex;
-  justify-content: space-between;
-  width: 1206px;
-  height: 500px;
+  height: 80vh;
   flex-direction: row;
   align-items: center;
   gap: 50px;
+  justify-content: space-around;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-bottom: 5%;
 }
 
 .hero__inner {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 600px;
-  height: 400px;
-  padding-left: 30px;
+  margin-top: 100px;
 }
 
 .hero__image {
-  padding-left: 44px;
-  padding-top: 138px;
-  padding-right: 77px;
+  padding-left: 12%;
+  padding-top: 3%;
+  padding-right: 7%;
 }
 
+.hero__image img {
+  width: 150%;
+  height: 150%;
+}
+
+
 @media screen and (max-width: 768px) {
-  .container__hero{
-    width: 100rem;
-    height: 300vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    margin-top: 35%;
-    gap: 0;
-
-  }
-
-  .hero__inner {
-    align-items: center;
-    width: 100%;
-    height: 300vh;
-    justify-content: center;
-  }
-
   .hero {
     padding: 0;
     margin: 0;
-  }
-
-  .hero__button {
-    width: 250px;
-    height: 70px;
-    font-size: 2.5rem;
   }
 
   .container {
@@ -91,14 +65,19 @@
     height: 100vh;
   }
 
+  .container__hero {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12%;
+    height: fit-content;
+  }
+
   .hero__image {
-    padding: 0;
-    width: 150vh;
-    height: 150vh;
+    padding-bottom: 25%;
   }
 
   .hero__image img {
-    width: 150vh;
-    height: 150vh;
+    width: 100%;
+    height: 100%;
   }
 }
