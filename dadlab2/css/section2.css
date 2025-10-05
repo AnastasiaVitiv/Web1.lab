@@ -1,30 +1,25 @@
 .section2 {
-  background-color: #F8F8F8;
-  height: 774px;
-  width: 1600px;
+  background-color: #f8f8f8;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-.testimonials__container {
-  width: 1018px;
-  height: 601px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-direction: row;
-  gap: 180px;
-  margin: 79px 281px 95px 301px;
-}
 
 .testimonial__text {
-  height: 515px;
-  width: 450px;
   display: flex;
   flex-direction: column; 
-  margin-bottom: 85px;
+  height: fit-content;
+  padding-bottom: 25%;
+  width: 70%;
 }
 
-.testimonials__header {
-  margin-bottom: 100px;
+.text {
+  width: 70%;
 }
 
 .stars {
@@ -55,16 +50,28 @@
   margin-top: 0px;
 }
 
-.testimonial__image img {
-  width: 384px;
-  height: 491px;
-  border-radius: 14px;
+.testimonials__header {
+  padding-bottom: 15%;
 }
 
+.testimonial__image img {
+  border-radius: 14px;
+  /* padding-right: 100px; */
+  /* padding-left: 100px; */
+  width: 100%;
+}
+
+
 @media screen and (max-width: 768px) {
+
   .section2 {
-    margin-top: 500%;
-    height: 170rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial__text {
+    width: 100%;
+    justify-content: center;
   }
 
   .testimonials__container {
@@ -76,41 +83,31 @@
     gap: 0;
   }
 
-  .testimonial__text {
-    height: 55rem;
-    width: 100rem;
-    margin-left: 5rem;
+  .testimonial__image img {
+    width: 100%;
+    border-radius: 5%;
   }
 
   .text {
-    font-size: 3.75rem;
-    line-height: 8rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    width: 100%;
   }
 
   .bold-text {
-    font-size: 3rem;
-    line-height: 8rem;
+    font-size: 1.5rem;
+    line-height: 5rem;
   }
 
   .text_c {
-    font-size: 2.85rem;
-  }
-
-  .testimonial__image {
-    height: 70rem;
-    width: 62rem;
-  }
-
-  .testimonial__image img {
-    height: 70rem;
-    width: 62rem;
-  }
-
-  .stars {
-    font-size: 10rem;
+    font-size: 1rem;
   }
 
   .stars img {
-    height: 5rem;
+    height: 1.5rem;
+  }
+
+  .testimonials__header {
+    padding-bottom: 5%;
   }
 }

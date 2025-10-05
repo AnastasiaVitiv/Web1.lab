@@ -1,16 +1,17 @@
-.container__stories {
-  width: 1125px;
-  height: 684px;
+.section3 {
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
-  margin: 90px 240px;
-}
+  padding: 50px 197px 116px 197px;
+} 
+
 
 .stories__header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  /* margin: ;80px */
   flex-direction: row;
+  align-items: baseline;
 }
 
 .link {
@@ -23,9 +24,10 @@
 
 .stories__body {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 20px;
   flex-direction: row;
+  margin-bottom: 100px;
 }
 
 .story {
@@ -40,6 +42,7 @@
   border-top-right-radius: 8px;
   width: 261px;
   height: 231px;
+  object-fit: cover;
 }
 
 .subheading {

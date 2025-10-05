@@ -1,16 +1,9 @@
-.container {
-  max-width: 1600px;
-  margin: 0 auto;
-  width: 1206px;
-  height: 740px;
-  margin: 27px 197px 116px 197px;
-}
-
 .hero {
-  min-height: 700px;
+  height: 100vh;
+  padding-top: 27px;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  
 }
 
 .hero__button {
@@ -30,21 +23,18 @@
 
 .container__hero {
   display: flex;
-  justify-content: space-between;
-  width: 1206px;
-  height: 500px;
+  height: 80vh;
   flex-direction: row;
   align-items: center;
   gap: 50px;
+  justify-content: space-around;
 }
 
 .hero__inner {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 600px;
-  height: 400px;
-  padding-left: 30px;
+  margin-top: 100px;
 }
 
 .hero__image {
@@ -52,6 +42,7 @@
   padding-top: 138px;
   padding-right: 77px;
 }
+
 
 @media screen and (max-width: 768px) {
   .container__hero{
@@ -70,6 +61,7 @@
     width: 100%;
     height: 300vh;
     justify-content: center;
+    background-color: #af5c5c;
   }
 
   .hero {
