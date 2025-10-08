@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Ship</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Додати новий корабель</h1>
+    <form id="createForm">
+        <label>Назва корабля:
+            <input type="text" id="name" required minlength="2">
+        </label><br>
+
+        <label>Тоннаж:
+            <input type="number" id="tonnage" required min="1">
+        </label><br>
+
+        <label>Кількість пасажирів:
+            <input type="number" id="passengers" required min="0">
+        </label><br>
+
+        <label>Ім’я капітана:
+            <input type="text" id="captain" required pattern="[A-Za-zА-Яа-яЇїІіЄє'\s]+">
+        </label><br>
+
+        <label>Швидкість (вузлів):
+            <input type="number" id="speed" required min="1">
+        </label><br>
+
+        <label>Пробіг (миль):
+            <input type="number" id="distance" required min="0">
+        </label><br>
+
+        <button type="submit">Створити</button>
+        <button href="index.html">Назад</button>
+    </form>
+
+    <script src="create.js"></script>
+</body>
+
+</html>

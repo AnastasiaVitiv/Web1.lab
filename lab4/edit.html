@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Ship</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Редагувати корабель</h1>
+    <form id="editForm">
+        <label>Назва корабля:
+            <input type="text" id="name" required>
+        </label><br>
+        <label>Капітан:
+            <input type="text" id="captain" required>
+        </label><br>
+        <label>Швидкість:
+            <input type="number" id="speed" min="1" required>
+        </label><br>
+        <label>Пробіг:
+            <input type="number" id="distance" min="0" required>
+        </label><br>
+
+        <button type="submit">Зберегти зміни</button>
+        <button href="index.html">Назад</button>
+    </form>
+
+    <script src="edit.js"></script>
+</body>
+
+</html>
