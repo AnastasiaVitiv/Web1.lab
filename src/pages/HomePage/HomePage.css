@@ -40,7 +40,6 @@
     font-size: 1rem;
 }
 
-/* Адаптивність для мобільних пристроїв */
 @media (max-width: 768px) {
     .hero-content {
         flex-direction: column;
@@ -58,4 +57,5 @@
     .hero-text h1 {
         font-size: 1.8rem;
     }
+
 }
