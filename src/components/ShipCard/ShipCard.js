@@ -1,0 +1,43 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { shipsApi } from "../../api/shipsApi"; 
+import PrimaryButton from "../PrimaryButton/PrimaryButton";
+import "./ShipCard.css";
+
+function ShipCard({ ship }) {
+    const logButtonClick = async (endpoint, params = {}) => {
+        try {
+            await shipsApi.logAction(endpoint, params);
+            console.log(`Button click logged: ${endpoint}`);
+        } catch (error) {
+            console.error('Error logging button click:', error);
+        }
+    };
+
+    const handleDetailsClick = () => {
+        logButtonClick('log/ship-details', {
+            shipId: ship.id,
+            shipName: ship.name
+        });
+    };
+
+    return (
+        <div className="ship-card">
+            <img src={ship.image} alt={ship.name} />
+            <h3>{ship.name}</h3>
+            <p><strong>Тонаж:</strong> {ship.tonnage} т</p>
+            <p><strong>Пасажирів:</strong> {ship.passengers}</p>
+            <p><strong>Швидкість:</strong> {ship.speed} вузлів</p>
+            <p><strong>Пробіг:</strong> {ship.mileage} км</p>
+            <p><strong>Ціна за тонну:</strong>  ${ship.price_per_ton}</p>      
+            <p><strong>Ціна за людину:</strong> ${ship.price_per_person}</p>
+            <div className="card-buttons">
+                <Link to={`/ship/${ship.id}`}>
+                    <PrimaryButton onClick={handleDetailsClick}>Детальніше</PrimaryButton>
+                </Link>
+            </div>
+        </div>
+    );
+}
+
+export default ShipCard;
