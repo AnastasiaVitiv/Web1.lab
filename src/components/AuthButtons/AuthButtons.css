@@ -1,0 +1,99 @@
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.logout-button {
+    background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 1px 3px rgba(244, 67, 54, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    height: 32px;
+}
+
+.logout-button:hover {
+    background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(244, 67, 54, 0.3);
+}
+
+.logout-button:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(244, 67, 54, 0.2);
+}
+
+.logout-button::before {
+    font-size: 12px;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    border: 2px solid #4a90e2;
+    background-color: transparent;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.auth-buttons a:hover {
+    background-color: #4a90e2;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(74, 144, 226, 0.3);
+}
+
+.auth-buttons a:first-child {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.auth-buttons a:first-child:hover {
+    background-color: #357ae8;
+    border-color: #357ae8;
+}
+
+.auth-buttons a:last-child {
+    background-color: transparent;
+    color: #4a90e2;
+}
+
+.auth-buttons a:last-child:hover {
+    background-color: #4a90e2;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .auth-buttons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .auth-buttons a,
+    .logout-button {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+}
